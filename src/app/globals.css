@@ -1,3 +1,25 @@
-@import 'tailwindcss';
 
+@import "tailwindcss";
 
+@theme {
+  --color-sky: #c3ebfa;
+  --color-skyLight: #edf9fd;
+  --color-purple: #cfceff;
+  --color-purpleLight: #f1f0ff;
+  --color-yellow: #fae27c;
+  --color-yellowLight: #fefce8;
+}
+
+.react-calendar{
+  width: 100% !important;
+  border:  none !important;
+  font-family: var(--font-inter) !important;
+}
+
+.react-calendar__tile--active{
+  background: var(--color-sky) !important;
+  color: black !important;
+}
+.react-calendar__navigation__label__labelText{
+  font-weight: 600;
+} 
